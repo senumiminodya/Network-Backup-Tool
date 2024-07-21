@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="225.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.TestController">
+   <children>
+      <TextField fx:id="txtName" layoutX="148.0" layoutY="41.0" />
+      <TextField fx:id="txtAddress" layoutX="148.0" layoutY="88.0" />
+      <Label layoutX="55.0" layoutY="41.0" prefHeight="24.0" prefWidth="62.0" text="Name" />
+      <Label layoutX="55.0" layoutY="88.0" prefHeight="24.0" prefWidth="62.0" text="Address" />
+      <JFXButton fx:id="saveBtn" layoutX="48.0" layoutY="153.0" onAction="#btnSaveOnAction" text="Save" />
+      <JFXButton fx:id="backupBtn" layoutX="138.0" layoutY="153.0" onAction="#btnBackupOnAction" text="BackUp" />
+   </children>
+</AnchorPane>
