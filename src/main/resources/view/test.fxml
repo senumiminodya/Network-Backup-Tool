@@ -5,13 +5,19 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="225.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.TestController">
+<AnchorPane prefHeight="391.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.TestController">
    <children>
       <TextField fx:id="txtName" layoutX="148.0" layoutY="41.0" />
       <TextField fx:id="txtAddress" layoutX="148.0" layoutY="88.0" />
       <Label layoutX="55.0" layoutY="41.0" prefHeight="24.0" prefWidth="62.0" text="Name" />
       <Label layoutX="55.0" layoutY="88.0" prefHeight="24.0" prefWidth="62.0" text="Address" />
-      <JFXButton fx:id="saveBtn" layoutX="48.0" layoutY="153.0" onAction="#btnSaveOnAction" text="Save" />
-      <JFXButton fx:id="backupBtn" layoutX="138.0" layoutY="153.0" onAction="#btnBackupOnAction" text="BackUp" />
+      <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="48.0" layoutY="153.0" onAction="#btnSaveOnAction" style="-fx-background-color: yellow;" text="Save" />
+      <JFXButton fx:id="backupBtn" buttonType="RAISED" layoutX="138.0" layoutY="153.0" onAction="#btnBackupOnAction" style="-fx-background-color: yellow;" text="BackUp" />
+      <Label layoutX="55.0" layoutY="203.0" prefHeight="24.0" prefWidth="149.0" text="Backup Automatically" />
+      <Label layoutX="55.0" layoutY="245.0" prefHeight="24.0" prefWidth="96.0" text="Backup date" />
+      <Label layoutX="55.0" layoutY="279.0" prefHeight="24.0" prefWidth="96.0" text="Backup time" />
+      <JFXButton fx:id="automaticalBackupBtn" buttonType="RAISED" layoutX="55.0" layoutY="316.0" onAction="#btnAutomaticalBackupOnAction" prefHeight="24.0" prefWidth="171.0" style="-fx-background-color: yellow;" text="Backup Automatically" />
+      <TextField fx:id="txtDate" layoutX="159.0" layoutY="245.0" promptText="yyyy-mm-dd" />
+      <TextField fx:id="txtTime" layoutX="159.0" layoutY="279.0" promptText="hh:mm" />
    </children>
 </AnchorPane>
